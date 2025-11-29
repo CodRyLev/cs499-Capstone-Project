@@ -1,0 +1,102 @@
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Slide wrapper */
+#slides {
+  position: relative;
+  min-height: 480px;
+}
+
+/* Individual slides */
+.slide {
+  display: none;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slide card */
+.slide-card {
+  background: #ffffff;
+  border: 1px solid #cce3df; 
+  padding-bottom: 10px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+  overflow: hidden;
+  text-align: left;
+}
+
+/* Image */
+.slide-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text content */
+.slide-content {
+  padding: 16px 20px;
+}
+
+/* Headings */
+.slide-content h2,
+.slide-content h3 {
+  color: #004d40; 
+}
+
+/* Controls */
+.controls {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.nav-btn {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #009c8d; 
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+  transition: background 0.25s ease;
+}
+
+.nav-btn:hover {
+  background: #004439; 
+}
+
+/* Dots to represent slides */
+.dots {
+  margin-top: 12px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #b2d8d3; 
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  background-color: #009c8d; 
+}
