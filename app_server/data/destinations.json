@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "name": "VivaMayr",
+    "location": "Maria Worth, Austria",
+    "description": "A medical spa located in rustic Austria that focuses on health and detox.",
+    "image": "/images/austria.jpg",
+    "rating": 4.2
+  },
+  {
+    "id": 2,
+    "name": "Ananda in the Himalayas",
+    "location": "India",
+    "description": "A retreat that focuses on natural healing and yoga with scenic views to restore balance within the body.",
+    "image": "/images/india.jpg",
+    "rating":4.7
+  },
+  {
+    "id": 3,
+    "name": "The Ranch Malibu",
+    "location": "California, USA",
+    "description": "A rural retreat that focuses on organic food and wellness to heal the body.",
+    "image": "/images/california.jpg",
+    "rating":4.5
+  },
+  {
+    "id": 4,
+    "name": "Kamalaya",
+    "location": "Koh Samui, Thailand",
+    "description": "A beach resort that focuses on healing through detox and relaxation.",
+    "image": "/images/thailand.jpg",
+    "rating": 5
+  },
+  {
+    "id": 5,
+    "name": "Sha Wellness Clinic",
+    "location": "Alicante, Spain",
+    "description": "A retreat in rustic Spain that utilizes natural meals and detox methods to restore the body.",
+    "image": "/images/spain.jpg",
+    "rating": 4
+  }
+]
+

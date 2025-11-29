@@ -1,0 +1,81 @@
+/* design global style */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f3f8f7; /* contrasting background*/
+  color: #333;
+}
+
+/* Main style */
+main {
+  padding: 40px;
+}
+
+/* Navigation bar */
+nav {
+  background: #009c8d; /* teal */
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #004d40; /* teal color selected */
+}
+
+/* Destination blocks */
+.destination {
+  background: #ffffff;
+  border: 1px solid #cce3df;
+  padding: 16px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+}
+
+.destination img {
+  max-width: 300px;
+  border-radius: 6px;
+  margin-top: 12px;
+}
+
+/* Style buttons */
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #009c8d;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+a.button:hover {
+  background: #004439;
+}
+
+/* return home style */
+a.return-link {
+  color: #00796b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.return-link:hover {
+  text-decoration: underline;
+}
