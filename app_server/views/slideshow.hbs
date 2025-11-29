@@ -1,0 +1,47 @@
+{{> header}}
+
+<main style="font-family: Arial; padding: 40px;">
+  <h1>{{heading}}</h1>
+
+  {{#if destinations}}
+    <section class="slideshow-container">
+
+      <div id="slides">
+        {{#each destinations}}
+          <div class="slide">
+            <div class="slide-card">
+              {{#if image}}
+                <img src="{{image}}" alt="{{name}}" class="slide-img">
+              {{/if}}
+
+              <div class="slide-content">
+                <h2>{{name}}</h2>
+                <h3>{{location}}</h3>
+                <p>{{description}}</p>
+                <p><em>ID: {{id}}</em></p>
+                <p><strong>Rating:</strong> {{stars rating}} ({{rating}})</p>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+
+      <div class="controls">
+        <button id="prevBtn" class="nav-btn">Prev</button>
+        <button id="nextBtn" class="nav-btn">Next</button>
+      </div>
+
+      <div id="dots" class="dots"></div>
+
+    </section>
+  {{else}}
+    <p>No destinations found.</p>
+  {{/if}}
+
+  <a href="/" style="display:inline-block; margin-top:20px;">Return Home</a>
+</main>
+
+<script src="/javascripts/slideshow-ui.js"></script>
+<link rel="stylesheet" href="/stylesheets/slideshow.css">
+
+
