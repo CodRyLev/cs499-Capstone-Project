@@ -26,3 +26,9 @@ This enhancement contributes to the following CS-499 course outcomes:
 
 - **Design and evaluate computing solutions** using computer science practices while managing design trade-offs.
 - **Demonstrate the use of well-founded and innovative techniques, skills, and tools** to implement computing solutions that deliver value.
+
+## Enhancement Narrative
+
+The full written narrative for Enhancement 1 is provided as a downloadable document:
+
+- [Enhancement 1 Narrative – Cody Leveille (DOCX)](https://github.com/CodRyLev/cs499-Capstone-Project/blob/Enhancement-1/Enhancement%201%20Narrative%20-%20Cody%20Leveille.docx)
