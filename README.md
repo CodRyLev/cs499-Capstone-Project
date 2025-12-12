@@ -24,3 +24,9 @@ This enhancement contributes to the following CS-499 course outcomes:
 
 - **Employ strategies for building collaborative environments** that support organizational decision making through clear implementation and review of algorithmic solutions.
 - **Design, develop, and deliver professional-quality oral, written, and visual communications** by clearly explaining algorithmic approaches, trade-offs, and problem-solving strategies.
+
+## Enhancement Narrative
+
+The full written narrative for Enhancement 2 is provided as a downloadable document:
+
+- [Enhancement 2 Narrative – Cody Leveille (DOCX)](https://github.com/CodRyLev/cs499-Capstone-Project/blob/Enhancement-2/Enhancement%202%20Narrative%20-%20Cody%20Leveille.docx)
