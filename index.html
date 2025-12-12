@@ -1,12 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CS-499 capstone project for Cody Leveille</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CS-499 Capstone Project – Cody Leveille</title>
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#111a33;
+      --text:#e8ecff;
+      --muted:#b7c0ffcc;
+      --line:#2a3566;
+      --link:#9bb5ff;
+      --linkHover:#c7d4ff;
+      --pill:#1a2650;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, #1b2a6b 0%, transparent 60%),
+                  radial-gradient(900px 500px at 90% 0%, #3a1b6b 0%, transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:var(--link); text-decoration:none}
+    a:hover{color:var(--linkHover); text-decoration:underline}
+    .wrap{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 18px 60px;
+    }
+    header{
+      padding: 18px 18px 6px;
+      margin-bottom: 14px;
+    }
+    h1{
+      margin: 0 0 6px;
+      font-size: 2rem;
+      letter-spacing: .2px;
+    }
+    .subtitle{
+      margin: 0;
+      color: var(--muted);
+      max-width: 70ch;
+    }
+    .meta{
+      margin-top: 10px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+    .pill{
+      background: var(--pill);
+      border: 1px solid var(--line);
+      padding: 6px 10px;
+      border-radius: 999px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-top: 10px;
+    }
+    @media (min-width: 860px){
+      .grid.two{
+        grid-template-columns: 1.1fr .9fr;
+        align-items:start;
+      }
+    }
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      backdrop-filter: blur(6px);
+    }
+    h2{
+      margin: 0 0 10px;
+      font-size: 1.25rem;
+    }
+    .card p{margin: 10px 0}
+    .button{
+      display:inline-block;
+      background: rgba(155,181,255,.14);
+      border: 1px solid rgba(155,181,255,.35);
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+    .button:hover{
+      background: rgba(199,212,255,.18);
+      border-color: rgba(199,212,255,.5);
+      text-decoration:none;
+    }
+    ul{
+      margin: 10px 0 0;
+      padding-left: 18px;
+    }
+    li{margin: 6px 0}
+    footer{
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: .9rem;
+      text-align:center;
+    }
+    .prose{
+      max-width: 75ch;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Welcome to My CS-499 Capstone ePortfolio</h1>
-  <p>This webpage will host the final capstone project for Cody Leveille for CS-499</p>
-  <p>Created by Cody Leveille</p>
+  <div class="wrap">
+    <header>
+      <h1>CS-499 Capstone ePortfolio</h1>
+      <p class="subtitle">
+        This webpage hosts the final capstone ePortfolio for Cody Leveille for the CS-499 Computer Science Capstone course at Southern New Hampshire University.
+      </p>
+      <div class="meta">
+        <span class="pill"><strong>Author:</strong> Cody Leveille</span>
+        <span class="pill"><strong>Course:</strong> CS-499</span>
+      </div>
+    </header>
+
+    <div class="grid two">
+      <section class="card">
+        <h2>Code Review</h2>
+        <p class="prose">
+          The following video provides a walkthrough of the original artifact, an analysis of areas for improvement, and an overview of the planned enhancements.
+        </p>
+        <p>
+          <a class="button" href="https://www.youtube.com/watch?v=rXGuYxzbHsA" target="_blank" rel="noopener noreferrer">
+            View Code Review Video
+          </a>
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Capstone Enhancements</h2>
+        <ul>
+          <li><strong>Enhancement 1:</strong> Software Design and Engineering</li>
+          <li><strong>Enhancement 2:</strong> Algorithms and Data Structures</li>
+          <li><strong>Enhancement 3:</strong> Databases</li>
+        </ul>
+        <p class="prose" style="margin-top:12px;">
+          Each enhancement is documented in its corresponding branch and includes a README describing scope, technologies, and course outcomes addressed.
+        </p>
+      </section>
+    </div>
+
+    <section class="card" style="margin-top:14px;">
+      <h2>Professional Self-Assessment</h2>
+
+<p class="prose">
+    Throughout my journey in the Computer Science program at Southern New Hampshire University, I have developed a strong foundation
+    in software development, problem-solving and professional communication. This ePortfolio represents my growth from learning
+    individual concepts to designing and evaluating complete computing solutions using modern industry technologies.
+    The work presented in this portfolio demonstrates not only my technical abilities and what I have learned but also my
+    readiness to contribute within a professional environment. 
+
+  </p>
+
+  <p class="prose">
+    As I progressed through the program, my approach to software development matured significantly. Early coursework focused on principles of programming with logic and syntax, while later courses required a deeper focus on architecture,
+    efficiency, security and modularity for expansions. By applying structured design principles and evaluating trade offs between different implementation approaches, I learned to think beyond what was simply required to create the functional
+    software but rather how it works and how it can be optimized. This progression prepared me to work with full stack technologies and real world development constraints.  
+ 
+  </p>
+  <p class="prose">
+    Collaboration and communication are essential components of my academic experience. I worked within environments that emphasized peer feedback, shared decision making and clear documentation. Activities within the capstone project reflect this through the use of code reviews,
+   version control and structured planning for future enhancements. This demonstrates my ability to effectively communicate technical concepts to diverse audiences. Producing a formal code review video and writing enhancement narratives have contributed to my professional ability
+   to showcase different designs and functionality within a professional setting. 
+ 
+  </p>
+  <p class="prose">
+   My technical competencies are demonstrated across software engineering, algorithms and data structures, and databases.
+    From a software engineering perspective, I designed and enhanced an application using Node.js and Express,
+    implementing modular architectures and RESTful routing to improve maintainability and scalability.
+    Algorithmic enhancements required me to analyze data flow, apply appropriate data structures and consider efficiency and
+    performance tradeoffs when evaluating solutions laid in front of me.
+    
+   </p>
+  <p class="prose">
+   Database integration was a key component of my capstone work. I utilized MongoDB as a NoSQL database solution and MongoDB Compass
+    as a development and visualization tool to design schemas, manage collections and validate data. Integrating MongoDB with
+    Express and Node.js allowed me to build a data driven application that persists through launching and shutting down.
+    It is able to retrieve information efficiently, reinforcing my understanding of backend development and full stack
+    architecture.
+    
+  </p>
+  <p class="prose">
+   Developing a security mindset was an important aspect of my growth as a computer science professional.
+    I learned to consider different vulnerabilities and different design philosophies during the design phase to eliminate
+    as many security risks as possible during the early stages of a project. When designing the enhancements for the capstone
+    project I took these into consideration and it influenced the final outcome of the project. Coursework and capstone work
+    reinforced this mindset and has taught me the importance of secure data handling, validation and awareness of future system
+    changes. When working with databases and server side technologies I applied the best practices to minimize exposure of
+    sensitive data and design systems with security and privacy in mind. 
+
+  </p>
+  <p class="prose">
+   The artifacts included in this ePortfolio were intentionally selected to function as a cohesive representation
+    of my growth across the multiple areas of computer science. Each enhancement intentionally builds upon the same core
+    application, demonstrating my ability to iteratively improve a system using modern tools and technologies.
+    This approach closely mirrors real world development and workflows and introduces the technical artifacts that 
+    follow as evidence of my skills and professional readiness. 
+
+  </p>
+  <p class="prose">
+   Overall completing the Computer Science program and developing this ePortfolio has prepared 
+   me to enter the field as a capable and adaptable software developer. I have strengthened my technical 
+   expertise with technologies such as Node.js, Express and MongoDB, refined my communication and collaboration 
+   skills and developed confidence in my ability to design secure, efficient and scalable professional projects. 
+   I am prepared to contribute meaningfully to professional development teams and continue growing within the field 
+   of computer science. 
+
+  </p>
+  <hr>
+    </section>
+
+    <footer>
+      © Cody Leveille — CS-499 Capstone ePortfolio
+    </footer>
+  </div>
 </body>
 </html>
