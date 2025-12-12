@@ -26,3 +26,9 @@ This enhancement contributes to the following CS-499 course outcomes:
 
 - **Demonstrate the use of well-founded and innovative techniques, skills, and tools** to implement computing solutions that deliver value through database integration and backend development.
 - **Develop a security mindset** by considering data validation, secure data handling, and potential vulnerabilities during database and server-side design.
+
+## Enhancement Narrative
+
+The full written narrative for Enhancement 3 is provided as a downloadable document:
+
+- [Enhancement 3 Narrative – Cody Leveille (DOCX)](https://github.com/CodRyLev/cs499-Capstone-Project/blob/Enhancement-3/Enhancement%203%20narrative%20-%20Cody%20Leveille.docx)
