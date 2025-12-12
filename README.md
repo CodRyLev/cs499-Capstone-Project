@@ -91,3 +91,12 @@ https://github.com/CodRyLev/cs499-Capstone-Project/tree/Enhancement-3
 This project was completed as part of the **CS-499 Computer Science Capstone** course at **Southern New Hampshire University** and reflects the cumulative knowledge gained throughout the program.
 
 
+## Capstone Enhancement Narratives
+
+- [Enhancement 1 Narrative – Cody Leveille (DOCX)](https://github.com/CodRyLev/cs499-Capstone-Project/blob/Enhancement-1/Enhancement%201%20Narrative%20-%20Cody%20Leveille.docx)
+
+- [Enhancement 2 Narrative – Cody Leveille (DOCX)](https://github.com/CodRyLev/cs499-Capstone-Project/blob/Enhancement-2/Enhancement%202%20Narrative%20-%20Cody%20Leveille.docx)
+
+- [Enhancement 3 Narrative – Cody Leveille (DOCX)](https://github.com/CodRyLev/cs499-Capstone-Project/blob/Enhancement-3/Enhancement%203%20narrative%20-%20Cody%20Leveille.docx)
+
+
