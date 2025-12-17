@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enhancement 1 – CS-499 Capstone Project – Cody Leveille</title>
+  <style>
+    :root{
+      --bg:#0b1020; --card:#111a33; --text:#e8ecff; --muted:#b7c0ffcc;
+      --line:#2a3566; --link:#9bb5ff; --linkHover:#c7d4ff; --pill:#1a2650;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, #1b2a6b 0%, transparent 60%),
+                  radial-gradient(900px 500px at 90% 0%, #3a1b6b 0%, transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:var(--link); text-decoration:none}
+    a:hover{color:var(--linkHover); text-decoration:underline}
+    .wrap{max-width: 980px; margin:0 auto; padding: 28px 18px 60px;}
+    header{padding: 18px 18px 6px; margin-bottom: 14px;}
+    h1{margin:0 0 6px; font-size:2rem;}
+    .subtitle{margin:0; color:var(--muted); max-width: 80ch;}
+    .meta{margin-top:10px; display:flex; flex-wrap:wrap; gap:10px; color:var(--muted); font-size:.95rem;}
+    .pill{background:var(--pill); border:1px solid var(--line); padding:6px 10px; border-radius:999px;}
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      backdrop-filter: blur(6px);
+    }
+    h2{margin:0 0 10px; font-size:1.25rem;}
+    .prose{max-width: 90ch;}
+    .button{
+      display:inline-block;
+      background: rgba(155,181,255,.14);
+      border: 1px solid rgba(155,181,255,.35);
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-weight: 600;
+      margin-right: 10px;
+      margin-top: 8px;
+    }
+    .button:hover{
+      background: rgba(199,212,255,.18);
+      border-color: rgba(199,212,255,.5);
+      text-decoration:none;
+    }
+    footer{margin-top:16px; color:var(--muted); font-size:.9rem; text-align:center;}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Enhancement 1 – Software Design & Engineering</h1>
+      <p class="subtitle">CS-499 Capstone ePortfolio – Cody Leveille</p>
+      <div class="meta">
+        <span class="pill"><strong>Category:</strong> Software Design & Engineering</span>
+        <span class="pill"><strong>Course:</strong> CS-499</span>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>Brief Description</h2>
+      <p class="prose">
+        Enhancement 1 focused on rebuilding the project from the ground up it took a simple java slideshow and turned it into a functional Express web application that utilized handlers, routes and controllers and rendered things dynamically through hbs pages
+      </p>
+
+      <h2>Enhancement Narrative</h2>
+      <p class="prose">
+        <strong>
+        Briefly describe the artifact. What is it? When was it created?
+        </strong>
+        
+      </p>
+      <p class="prose">
+       The artifact selected was a top 5 vacations destination slideshow back from CS-250. It was selected because it was
+        a simple java application that had room to show growth and development from my programming journey.
+         The program uses Jframe to display the initial information. The original design was practical but
+          limited since everything was hard coded into the one program. 
+              
+      </p>
+      <p class="prose">
+        <strong>
+        Justify the inclusion of the artifact in your ePortfolio. Why did you select this item? What specific components of the artifact showcase your skills and abilities in software development? How was the artifact improved?
+        </strong>
+        
+      </p>
+      <p class="prose">
+        The artifact was selected because it shows the results of basic programming knowledge from when I first started the programming journey at SNHU. Overall it was functional and simple but had a lot of opportunities to grow. 
+        The enhancement done for this section of the program shows I am capable of creating a project from the ground up with modern engineering practices. Originally this program was very monolithic so the capability of expanding it was limiting. 
+        With my enhancement I turned it into an express web application that is modular and utilizes MVC (Model View Controller) patterns, I created several functional pages in this enhancement including a splash page, a slideshow page that displays the information, an about me section
+         and a project section. I implemented a dynamic header with a global stylesheet making everything look uniform throughout the page. The reason I selected the color I did is because it is my sister's favorite color and she is very dear to me. I had the opportunity to apply a personal 
+         touch, so I did. With this the teal and white combination it is aesthetically pleasing to the eyes
+
+        
+      </p>
+      <p class="prose">
+        <strong>
+          Below is a picture of the splash page hosted on localhost:3000
+        </strong>
+      </p>
+      <img src="./images/Narrative1.png" alt="Original application before enhancement">
+      <p class="prose">
+        This demonstrates that the first enhancement has implemented a functional web application frame. 
+      </p>
+      <p class="prose">
+        <strong>
+          Did you meet the course outcomes you planned to meet with this enhancement in Module One? Do you have any updates to your outcome-coverage plans?
+
+        </strong>
+      </p>
+      <p class="prose">
+        This enhancement meets my intended outcomes for this section. For this section it was aiming to achieve outcome 3 and 4. These outcomes were achieved through rebuilding a functional express based web application and it demonstrates the ability to design and implement modern software architecture from the empty files. 
+
+      </p>
+      <p class="prose">
+        Outcome 3 was achieved through the use of a MVBC design pattern. The creation of controllers, routes, services and views reflects industry standards taught to us in CS-465. The new project structure is more expandable and overall more modular. If I or someone else wanted to add a new page to this project it would be simple through a few edits in the main files. 
+
+      </p>
+      <p class="prose">
+        Outcome 4 was achieved by improving the overall usability of the application, before it was a hard coded java program but now it has the groundworks to be a scalable model that can implement whatever data is needed for it. By implementing a global style sheet and a header that navigates smoothly throughout the pages it shows the use of real world web development practices. Through looking at the program through outcome 4 I tried to take a consumer first approach, I wanted the interface to be simple and easy to navigate. Oftentimes developers overlook design characteristics during development but by making things look sleek and functional I achieve the intent of this outcome. 
+
+      </p>
+      <p class="prose">
+        At this time I do not have any updates for my outcome coverage plans. Enhancement one has successfully covered the original outcomes I wanted to address. The remaining outcomes plan to be addressed in enhancements two and three as I expand the project with datastructures, algorithms and databases. 
+
+      </p>
+      <p class="prose">
+        <strong>
+          Reflect on the process of enhancing and modifying the artifact. What did you learn as you were creating it and improving it? What challenges did you face?
+
+        </strong>
+      </p>
+      <p class="prose">
+        Reflecting on this enhancement and modifying the original artifact I realized how much I learned through building this web application from the ground up. My experience with Express was mostly limited to what I learned in CS-465. So one of the most helpful resources I had during this phase was the course book and its examples. Using it as a reference I began to understand how Express works overall from a surface level and what's under the hood. Through doing this enhancement I reinforced my knowledge of how controllers, routes services and views work together to form a functional web application. 
+
+      </p>
+      <p class="prose">
+        During this enhancement I ran into an issue immediately when setting up my local development environment. My firewall was blocking the application from running localhost:3000 which prevented the entire project from launching. After doing some troubleshooting I resolved the issue by making an exception through my firewall settings. 
+
+      </p>
+      <p class="prose">
+        Another challenge I had was translating the original Java slideshow into something that was considered modern. The java version had everything hardcoded into the program and attempting to replicate this in the express application was impractical. I eventually decided that storing the information in a JSON was ideal because it can easily be integrated to MongoDB later on. This worked better than hardcoding the values into the program and will be much easier to scale later on, the dataset can be expanded on without any major changes to the code.
+
+      </p>
+      <img src="./images/NarrativeOne.png" alt="Original slideshow in a list">
+      <p class="prose">
+        Overall this enhancement helped me reinforce my knowledge about Express and MVC architecture and allowed me to create a professional looking enhancement with modern programming practices. 
+      </p>
+
+    
+
+      <h2>Links</h2>
+      <a class="button" href="https://github.com/CodRyLev/cs499-Capstone-Project/tree/Enhancement-1" target="_blank" rel="noopener noreferrer">
+        View Code (Enhancement 1)
+      </a>
+      <a class="button" href="https://github.com/CodRyLev/cs499-Capstone-Project/tree/Original-Artifact" target="_blank" rel="noopener noreferrer">
+        View Code (Original)
+      </a>
+      <a class="button" href="./index.html">
+        Back to Home
+      </a>
+    </section>
+
+    <footer>
+      Cody Leveille — CS-499 Capstone ePortfolio
+    </footer>
+  </div>
+</body>
+</html>
