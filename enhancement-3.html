@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enhancement 3 – CS-499 Capstone Project – Cody Leveille</title>
+  <style>
+    :root{
+      --bg:#0b1020; --card:#111a33; --text:#e8ecff; --muted:#b7c0ffcc;
+      --line:#2a3566; --link:#9bb5ff; --linkHover:#c7d4ff; --pill:#1a2650;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, #1b2a6b 0%, transparent 60%),
+                  radial-gradient(900px 500px at 90% 0%, #3a1b6b 0%, transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:var(--link); text-decoration:none}
+    a:hover{color:var(--linkHover); text-decoration:underline}
+    .wrap{max-width: 980px; margin:0 auto; padding: 28px 18px 60px;}
+    header{padding: 18px 18px 6px; margin-bottom: 14px;}
+    h1{margin:0 0 6px; font-size:2rem;}
+    .subtitle{margin:0; color:var(--muted); max-width: 80ch;}
+    .meta{margin-top:10px; display:flex; flex-wrap:wrap; gap:10px; color:var(--muted); font-size:.95rem;}
+    .pill{background:var(--pill); border:1px solid var(--line); padding:6px 10px; border-radius:999px;}
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      backdrop-filter: blur(6px);
+    }
+    .card img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      margin: 12px 0;
+    }
+
+  
+
+    
+    h2{margin:0 0 10px; font-size:1.25rem;}
+    .prose{max-width: 90ch;}
+    .button{
+      display:inline-block;
+      background: rgba(155,181,255,.14);
+      border: 1px solid rgba(155,181,255,.35);
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-weight: 600;
+      margin-right: 10px;
+      margin-top: 8px;
+    }
+    .button:hover{
+      background: rgba(199,212,255,.18);
+      border-color: rgba(199,212,255,.5);
+      text-decoration:none;
+    }
+    footer{margin-top:16px; color:var(--muted); font-size:.9rem; text-align:center;}
+    pre {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
+  overflow-x: auto;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+code {
+  color: #dbe3ff;
+  font-family: Consolas, Monaco, "Courier New", monospace;
+}
+
+
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Enhancement 3 – Databases</h1>
+      <p class="subtitle">CS-499 Capstone ePortfolio – Cody Leveille</p>
+      <div class="meta">
+        <span class="pill"><strong>Category:</strong> Databases</span>
+        <span class="pill"><strong>Course:</strong> CS-499</span>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>Brief Description</h2>
+      <p class="prose">
+        Enhancement 3 converted the JSON file into MongoDB and utilizes MongoDB Compass to handle data manipulation, within MongoDB compass a user can Create, Read, Update and Delete entries within the database. The data is saved between sessions and has been integrated with the other infrastructure from previous enhancements. With the completion of this enhancement
+         the Capstone-499 project is complete and is a complete functional webstack application.
+      </p>
+
+      <h2>Enhancement Narrative</h2>
+      <p class="prose">
+        <strong>
+        Briefly describe the artifact. What is it? When was it created?
+        </strong>
+        
+      </p>
+      <p class="prose">
+       The artifact I chose for this enhancement was a slideshow originally created
+        in COS 250. It is a slideshow that uses a simple Java program to display a top 5 destination slideshow.
+         It uses JFrame to accomplish this which is considered legacy within Java itself. It has a lot of limitations 
+         to it being simple because everything is hard coded into the program, this was one of my earliest programming 
+         assignments and it does not include any databases. The enhanced version implements this within a Node.js and Express
+          web application.  
+
+      </p>
+      <p class="prose">
+        <strong>
+        Justify the inclusion of the artifact in your ePortfolio. Why did you select this item? What specific components of the artifact showcase your skills and abilities in software development? How was the artifact improved?
+        </strong>
+        
+      </p>
+      <p class="prose">
+        The artifact selected has a lot of potential for development growth. It being a simple JFrame 
+        slideshow with hardcoded values means it is functional but not easily expanded on. This application has none of the 
+        requirements for enhancement 3, there are no databases within the entire application. With the integration of MongoDB 
+        into the project it will make this project more modular and enhance the complexity demonstrating my skills with databases. 
+
+      
+      </p>
+      <p class="prose">
+        This enhancement efficiently showcases my skills with databases, but more importantly, it highlights several core
+         development competencies. The transition from a static hardcoded system to a structured Model-View-Controller web
+          application demonstrates a wealth of knowledge regarding architectural design principles. With the implementation
+           of controllers, services, routes and a database, I demonstrate my ability to develop a fully integrated system that
+            aligns with the requirements for CS-499. 
+      </p>
+      <p class="prose">
+        <strong>
+          In this enhancement I specifically integrated MongoDB into the web application .
+        </strong>
+      </p>
+
+      <img src="./images/Narrative3.png" alt="updated slideshow">
+      <p class="prose">
+        This demonstrates that Node read from the MongoDB and started successfully.
+
+      </p>
+
+      <p class="prose">
+        <strong>
+          Figure 2: database seeded successfully, demonstrating functional data insertion and backend communication.
+        </strong>
+      </p>
+      <img src="./images/NarrativeThree.png" alt="seeded database">
+      <p class="prose">
+        After executing seed.js, the database is populated with the slideshow destination data, 
+        allowing the information to be viewed and modified through MongoDB Compass based on the
+         defined Mongoose schema. New content can be added manually by following the JSON structure:
+
+
+      </p>
+      <pre><code>{
+      "id": 6,
+       "name": "Best Spa Ever",
+       "location": "Kauai, Hawaii",
+       "rating": 4.9,
+       "image": "test.jpg",
+       "description": "A world-class luxury spa experience...",
+       "tags": ["spa", "relaxation", "luxury"]
+}</code></pre>
+      <p class="prose">
+        This will add data to the database and update the slideshow accordingly depending on the information that
+         is entered. It being a top 5 destinations slideshow it will display the 5 highest rated locations within the current
+          database.
+
+      </p>
+      <p class="prose">
+        <strong>
+          Figure 3: Destination entries stored in MongoDB Compass after seeding, showing successful database integration and structured document storage.
+        </strong>
+      </p>
+      <img src="./images/NarrativeThreeData.png" alt="new entry in database">
+      <p class="prose">
+        <strong>
+          Figure 4:Updated slideshow view, rendered dynamically using controllers and Handlebars templates driven by MongoDB data.
+        </strong>
+      </p>
+      <img src="./images/NarrativeThreeSlideshow.png" alt="updated slideshow">
+     
+
+      <p class="prose">
+        <strong>
+          Did you meet the course outcomes you planned to meet with this enhancement? Do you have any updates to your outcome-coverage plans?
+        </strong>
+      </p>
+      <p class="prose">
+        This enhancement has successfully met the requirements of the intended outcomes laid out in Module One.  There are no plans to update the outcome coverage plan at this time.
+      </p>
+
+      <p class="prose">
+        Outcome 4 - Demonstrate an ability to use innovative techniques, skills, and tools to implement computer solutions.
+
+      </p>
+      <p class="prose">
+        This enhancement demonstrates outcome 4 by replacing the hardcoded static Java slideshow with a
+         modern modular Node.js application powered by MongoDB. I implemented the Mongoose schemas, express
+          routing and seeding demonstrating the ability of current development tools to produce a flexible modular modern solution.
+
+      </p>
+      <p class="prose">
+        Outcome 5 - Although the user authentication was not implemented this enhancement demonstrates outcome 5
+         through secure handling of database credentials, use of environment based configuration and schema enforced
+          data validation. These practices reduce risk of attack and malformed data insertion within the database and
+           overall reflect a proactive approach to secure system architecture. 
+
+      </p>
+      <p class="prose">
+        <strong>
+          Reflect on the process of enhancing and modifying the artifact. What did you learn as
+           you were creating it and improving it? What challenges did you face?
+
+        </strong>
+      </p>
+      <p class="prose">
+        Through enhancing this project a person had to rethink how the original data was handled and its overall scalability. 
+        The original slideshow was static and hardcoded making expansion tedious and cumbersome. With the integration of MongoDB I 
+        learned more about how data is processed within the stack.
+         These changes overall make the project more modern and more scalable for future use. 
+      </p>
+      <p class="prose">
+        One of the first challenges I ran into was configuring and seeding MongoDB. Initially the script failed to
+         run properly returning errors instead of inserting the proper data into the database Troubleshooting the issue required
+          me to examine the schema and verify the connection to the database and adjusting the execution method for the seed.js.
+         This experience made me more familiar with this database overall and improved my debugging skills. 
+      </p>
+      <p class="prose">
+        Another issue I ran into was the slideshow returning all slides within the database while the original was a “top 5 destination” slideshow. To resolve this I modified the logic to return a sliced subset of the database collection rather than the entire thing, this adjustment improved the data handling and allowed the application to properly display 5 slides as originally intended. Through this I learned the importance of
+         bug testing and debugging code to work properly. A simple error in logic can throw off the entire interface for a user.
+      </p>
+      <p class="prose">
+        Overall this enhancement has strengthened my skills and problem solving regarding backend development
+        and full stack architecture. I walk a path with a stronger understanding of Node.js, MongoDB integration 
+        and how to properly seed a database. With this experience it has reinforced my understanding of backend 
+        development and how to work with real world development tools. Through this process I gained experience that will
+         directly benefit my future projects and professional work.
+         This enhancement marks a meaningful step forward in my journey as a programmer. 
+      </p>
+      
+    
+
+      <h2>Links</h2>
+      <a class="button" href="https://github.com/CodRyLev/cs499-Capstone-Project/tree/Enhancement-3" target="_blank" rel="noopener noreferrer">
+        View Code (Enhancement 3)
+      </a>
+      <a class="button" href="https://github.com/CodRyLev/cs499-Capstone-Project/tree/Original-Artifact" target="_blank" rel="noopener noreferrer">
+        View Code (Original)
+      </a>
+      <a class="button" href="./index.html">
+        Back to Home
+      </a>
+    </section>
+
+    <footer>
+      Cody Leveille — CS-499 Capstone ePortfolio
+    </footer>
+  </div>
+</body>
+</html>
