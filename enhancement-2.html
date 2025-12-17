@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enhancement 2 – CS-499 Capstone Project – Cody Leveille</title>
+  <style>
+    :root{
+      --bg:#0b1020; --card:#111a33; --text:#e8ecff; --muted:#b7c0ffcc;
+      --line:#2a3566; --link:#9bb5ff; --linkHover:#c7d4ff; --pill:#1a2650;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, #1b2a6b 0%, transparent 60%),
+                  radial-gradient(900px 500px at 90% 0%, #3a1b6b 0%, transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:var(--link); text-decoration:none}
+    a:hover{color:var(--linkHover); text-decoration:underline}
+    .wrap{max-width: 980px; margin:0 auto; padding: 28px 18px 60px;}
+    header{padding: 18px 18px 6px; margin-bottom: 14px;}
+    h1{margin:0 0 6px; font-size:2rem;}
+    .subtitle{margin:0; color:var(--muted); max-width: 80ch;}
+    .meta{margin-top:10px; display:flex; flex-wrap:wrap; gap:10px; color:var(--muted); font-size:.95rem;}
+    .pill{background:var(--pill); border:1px solid var(--line); padding:6px 10px; border-radius:999px;}
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      backdrop-filter: blur(6px);
+    }
+    .card img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      margin: 12px 0;
+    }
+
+  
+
+    
+    h2{margin:0 0 10px; font-size:1.25rem;}
+    .prose{max-width: 90ch;}
+    .button{
+      display:inline-block;
+      background: rgba(155,181,255,.14);
+      border: 1px solid rgba(155,181,255,.35);
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-weight: 600;
+      margin-right: 10px;
+      margin-top: 8px;
+    }
+    .button:hover{
+      background: rgba(199,212,255,.18);
+      border-color: rgba(199,212,255,.5);
+      text-decoration:none;
+    }
+    footer{margin-top:16px; color:var(--muted); font-size:.9rem; text-align:center;}
+
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Enhancement 2 – Algorithms & Data Structures</h1>
+      <p class="subtitle">CS-499 Capstone ePortfolio – Cody Leveille</p>
+      <div class="meta">
+        <span class="pill"><strong>Category:</strong> Algorithms & Data Structures</span>
+        <span class="pill"><strong>Course:</strong> CS-499</span>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>Brief Description</h2>
+      <p class="prose">
+        Enhancement 2 focused on implementing a fucntional slideshow similar to the original project but implemented a sorting method to display destinations by their overall rank. It utilizes a simple scrolling method to allow a user to navigate through the page without any refreshing required. This enhancement
+         also implemented a hashmap to allow fast lookups of data by their name.
+      </p>
+
+      <h2>Enhancement Narrative</h2>
+      <p class="prose">
+        <strong>
+        Briefly describe the artifact. What is it? When was it created?
+        </strong>
+        
+      </p>
+      <p class="prose">
+       The artifact I chose for this enhancement was a slideshow originally created in COS 250. 
+       It is a slideshow that uses a simple Java program to display a top 5 destination slideshow. It uses JFrame to accomplish
+        this which is considered legacy within Java itself. It has a lot of limitations to it being simple because everything is hard coded into the program, this was one of my earliest programming assignments and it does not include any algorithms or data structures within the program. The enhanced version implements both of
+        these things within a Node.js and Express web application. 
+              
+      </p>
+      <p class="prose">
+        <strong>
+        Justify the inclusion of the artifact in your ePortfolio. Why did you select this item? What specific components of the artifact showcase your skills and abilities in software development? How was the artifact improved?
+        </strong>
+        
+      </p>
+      <p class="prose">
+        This artifact was selected because it has a lot of potential for growth and development. Its simplicity made 
+        it an ideal foundation for expanding upon what I’ve learned. The original Java application has none of the
+         requirements needed for enhancement 2, it does not utilize data structures or any algorithms and it simply 
+         cycles through a hard coded list of images. By converting it to a web application and adding a computational 
+         layer I was able to expand the complexity and modularity of the project. 
+      
+      </p>
+      <p class="prose">
+        This enhancement effectively showcases my applied skills in algorithms and data structures.
+         First I implemented a dedicated algorithm that provides a way to dynamically filter and sort the destination data.
+          The sorting logic I selected to accomplish this leverages JavaScript’s Timsort based .sort(),
+           this at a worst case scenario is o(n log n) for a time complexity and when filtering only uses
+            a time complexity of o(n) in a linear scan to find partial location matching or the rating. On top of
+             this method to sort the data I added a map based lookup that allows a user to look up data with O(1) 
+             complexity by ID, this bypasses the O(n) scanning approach when applicable. These enhancements demonstrate
+              an understanding of performance tradeoff and an appropriate structure selection. 
+
+      </p>
+      <p class="prose">
+        <strong>
+          Below is a picture of the slideshow list turned into a function slideshow
+        </strong>
+      </p>
+
+      <img src="./images/Narrative2.png" alt="updated slideshow">
+
+      <p class="prose">
+        <strong>
+          Did you meet the course outcomes you planned to meet with this enhancement? Do you have any updates to your outcome-coverage plans?
+        </strong>
+      </p>
+      <p class="prose">
+        This enhancement successfully met the intended outcomes of Module One. There are no plans on updating the coverage outcome at this time.
+      </p>
+
+      <p class="prose">
+        Outcome One - Employ strategies for building collaborative environments that enable diverse audiences to support
+         organizational decision making in the field of computer science.
+      </p>
+      <p class="prose">
+        This was achieved by making the project modular and easily scalable, the intention of recreating this project
+         was to take it on with the perspective it can be adapted to a larger project and a team can easily build
+         and add things to what I create. Through the use of comments that are impactful a developer or stakeholder  
+         can read through them and understand what each line does and the overall structure of the program. An example
+          of this in this module is the creation of the destinationRepo.js, it handles the future switch to MongoDB 
+          and uses a JSON as a failsafe. This is something that would be a common practice within a professional
+           setting because another team member would be responsible for the creation of the MongoDB integration and
+            the two programs should fit together like a puzzle. Designing programs like this makes development time
+             faster and easier to adapt to what is needed, it prevents major rewrites down the road. 
+
+      </p>
+      <p class="prose">
+        Outcome 2 - Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts 
+      </p>
+      <img src="./images/NarrativeTwo.png" alt="updated project tab">
+      <p class="prose">
+        The enhancement has strengthened my professional communication skills. I have documented the algorithmic components within the program and clearly organized the code so that its purpose and behavior are easy to understand. I added an explanation section within the project page outlining the goals of each enhancement visually communicating what they accomplish. This demonstrates my ability to deliver
+         a coherent technical explanation through written and visual communication.  
+      </p>
+      <p class="prose">
+        <strong>
+          Reflect on the process of enhancing and modifying the artifact. What did you learn as you were creating it and improving it? What challenges did you face?
+        </strong>
+      </p>
+      <p class="prose">
+        This enhancement was more about critical thinking, at first I was not sure what
+         algorithm I wanted to use for the overall data manipulation. I originally was going to use a quick 
+         sort to accomplish the sorting of the data but I learned that JavaScript’s .sort() uses a Timsort-based
+          approach. The algorithm I wanted to use in the best case scenario was a time complexity of O(n log n) which
+           is acceptable but Timsort has a worst case scenario of the same time complexity. 
+           The sorting was performed using JavaScript’s Timsort-based .sort() implementation, because in a professional 
+           scenario an employer would want you to use the more optimized sort method which reduces the overall amount of
+            resources needed to compute the data. Although this would not be noticed much with small datasets it becomes a
+             problem as the datasets get larger. Another thing I ran into in this enhancement was when creating the data 
+             structures I wanted to make it so I could easily integrate MongoDB in the future, this made it feel more like a
+              team environment because I was working with future me to create the scaffolding of enhancement three so the 2
+               can be put together like a puzzle. This made me think more of the long term in terms of development. My choices
+                were intentional and focused on supporting future scalability. This was also one of the challenges I faced with
+                 these enhancements, I was thinking to myself what is the best way to handle this without changing a lot of the
+                  logic from enhancement 2. Overall I decided to have a controller that just switches to the use of MongoDB and 
+                  as a failsafe uses the JSON as a backup.
+
+
+      </p>
+
+
+
+    
+
+      <h2>Links</h2>
+      <a class="button" href="https://github.com/CodRyLev/cs499-Capstone-Project/tree/Enhancement-2" target="_blank" rel="noopener noreferrer">
+        View Code (Enhancement 2)
+      </a>
+      <a class="button" href="https://github.com/CodRyLev/cs499-Capstone-Project/tree/Original-Artifact" target="_blank" rel="noopener noreferrer">
+        View Code (Original)
+      </a>
+      <a class="button" href="./index.html">
+        Back to Home
+      </a>
+    </section>
+
+    <footer>
+      Cody Leveille — CS-499 Capstone ePortfolio
+    </footer>
+  </div>
+</body>
+</html>
